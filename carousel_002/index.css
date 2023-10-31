@@ -1,0 +1,202 @@
+#attryb-carousel-002-section-wrap {
+    padding: 60px 0px;
+}
+
+.attryb-carousel-002-card-container {
+    width: 1400px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: auto;
+    background-color: #FFF;
+    padding: 0 1.5rem 0 1.5rem;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.attryb-carousel-01-card-handler {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.attryb-carousel-002-card-handler>p {
+    font-family: inherit;
+    font-size: 2rem;
+    font-weight: 500;
+    line-height: 2.375rem;
+    margin: 0;
+}
+
+.attryb-carousel-002-bt {
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 2.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    cursor: pointer;
+    position: absolute;
+    background: #FFF;
+    box-sizing: border-box;
+    box-shadow: 0.125rem 0.1875rem 1rem 0rem rgba(0, 0, 0, 0.06);
+}
+
+.attryb-carousel-002-button-left {
+    left: 0rem;
+    top: 15rem;
+    z-index: 998;
+}
+
+.attryb-carousel-002-button-right {
+    right: 0rem;
+    top: 15rem;
+    z-index: 998;
+}
+
+.attryb-carousel-002-button-right:hover,
+.attryb-carousel-002-button-left:hover {
+    border: 0.0625rem solid black;
+}
+
+.attryb-carousel-002-card-container>.attryb-carousel-002-card-holder {
+    display: flex;
+    gap: 1.5rem;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding: 0.875rem 0;
+}
+
+.attryb-carousel-002-card-container>.attryb-carousel-002-card-holder::-webkit-scrollbar {
+    display: none;
+}
+
+.attryb-carousel-002-card-container>.attryb-carousel-002-card-holder>.attryb-carousel-002-card-box-1 {
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background: #FFF;
+    box-shadow: 0.125rem 0.1875rem 1rem 0rem rgba(0, 0, 0, 0.05);
+}
+
+.attryb-carousel-002-card-avatar-container>img {
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.attryb-carousel-002-card-product-details {
+    padding: 0.75rem 1rem;
+}
+
+.attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-title {
+    font-family: inherit;
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+    margin: 0;
+}
+
+.attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-price {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    #attryb-carousel-002-section-wrap {
+        padding: 60px;
+    }
+
+    .attryb-carousel-002-card-container {
+        width: 1240px;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder>.attryb-carousel-002-card-box-1 {
+        min-width: 280px;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    #attryb-carousel-002-section-wrap {
+        padding: 0rem;
+    }
+
+    .attryb-carousel-002-card-container {
+        padding: 2.5rem 0 2.5rem 2.25rem;
+        width: auto;
+    }
+
+    .attryb-carousel-002-card-handler>p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+
+    .attryb-carousel-002-bt {
+        display: none !important;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder {
+        gap: 1rem;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder>.attryb-carousel-002-card-box-1 {
+        min-width: 336px;
+    }
+
+    .attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-title {
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+    }
+
+    .attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-price {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+    #attryb-carousel-002-section-wrap {
+        padding: 0rem;
+    }
+
+    .attryb-carousel-002-card-container {
+        padding: 2rem 0 2rem 1.25rem;
+        width: auto;
+    }
+
+    .attryb-carousel-002-card-handler>p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .attryb-carousel-002-bt {
+        display: none !important;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder {
+        gap: 1rem;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder {
+        gap: 0.75rem;
+    }
+
+    .attryb-carousel-002-card-container>.attryb-carousel-002-card-holder>.attryb-carousel-002-card-box-1 {
+        min-width: 240px;
+    }
+
+    .attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-title {
+        font-size: 0.875rem;
+        line-height: 1.375rem;
+    }
+
+    .attryb-carousel-002-card-product-details>.attryb-carousel-002-card-product-price {
+        font-size: 0.75rem;
+        line-height: 1.125rem;
+    }
+}

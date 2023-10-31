@@ -1,0 +1,353 @@
+body {
+    margin: 0px;
+}
+
+.project-main-box {
+    background-color: aqua;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+.cart-main-container-1 {
+    width: 660px;
+    height: 618px;
+    background-color: #FFF;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.product-description>.remember-txt {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product-description>.bold-txt {
+    font-family: inherit;
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+.product-description>.code-txt {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+    margin: 0 0 30px 0;
+}
+
+.product-description>.code-txt>span {
+    font-family: inherit;
+    font-size: 1.25rem;
+    font-weight: 600;
+    line-height: 1.875rem;
+}
+
+
+.product-card {
+    width: 536px;
+    height: 538px;
+    /* border: 1px solid red; */
+    text-align: center;
+}
+
+.product-datas {
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 16px;
+    overflow: hidden;
+    position: relative;
+    scroll-behavior: smooth;
+}
+
+.product-data-box-1 {
+    border: 1px solid #F2F4F7;
+    width: 260px;
+    height: 328px;
+}
+
+.product-data-box-1>.avatar-container {
+    width: 260px;
+    height: 260px;
+}
+
+.product-data-box-1>.avatar-container>img {
+    width: 100%;
+}
+
+.product-data-box-1>.product-details {
+    text-align: start;
+    padding: 12px;
+}
+
+.product-data-box-1>.product-details>.product-title {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    margin: 0;
+}
+
+.product-data-box-1>.product-details>.product-price {
+    font-family: inherit;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    letter-spacing: 0.0223rem;
+    margin-top: 4px;
+}
+
+.product-card>.offer-button-box>button {
+    width: 260px;
+    height: 44px;
+    background-color: #000000;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 24px;
+    color: #FFF;
+    border: none;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+.product-card>.offer-button-box>button:hover {
+    background-color: #434141;
+}
+
+.popup-close-1 {
+    position: absolute;
+    display: flex;
+    padding: 0.125rem;
+    top: 4%;
+    right: 4%;
+    padding: 0.25rem;
+    transition: 0.3;
+}
+
+.popup-close-1:hover {
+    border-radius: 50%;
+    background-color: rgba(41, 4, 4, 0.03);;
+}
+
+.chevron {
+    width: 28px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 24px;
+    border: 1px solid #98A2B3;
+    box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.06), 0px 1px 3px 0px rgba(16, 24, 40, 0.10);
+    cursor: pointer;
+    background-color: #FFF;
+}
+
+.chevron:hover,
+.chevron:hover svg path {
+    border: 1px solid black;
+    stroke: black;
+}
+
+.left-butn-chv {
+    left: 48px;
+    bottom: 238px;
+}
+
+.right-butn-chv {
+    right: 48px;
+    bottom: 238px;
+    transform: rotate(180deg);
+}
+
+/* Hamburger */
+header {
+    background-color: rgb(34, 32, 32);
+}
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+.navbar {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 29px;
+}
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 65px;
+}
+.nav-logo {
+    font-size: 2rem;
+}
+.nav-link {
+    transition: 0.6s;
+}
+.nav-link:hover {
+    color: aqua;
+}
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: white;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .cart-main-container-1 {
+        width: 580px;
+        height: 556px;
+    }
+
+    .product-card {
+        width: 456px;
+        height: 476px;
+    }
+
+    .product-description>.code-txt {
+        font-size: 1.125rem;
+        margin: 0 0 20px 0;
+    }
+
+    .product-description>.code-txt>span {
+        font-size: 1.125rem;
+    }
+
+    .product-description>.bold-txt {
+        font-size: 2rem;
+    }
+
+    .product-data-box-1 {
+        width: 220px;
+        height: 288px;
+    }
+
+    .product-data-box-1>.avatar-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .product-card>.offer-button-box>button {
+        width: 220px;
+    }
+}
+
+@media only screen and (max-width: 769px) {
+
+    .cart-main-container-1 {
+        width: 340px;
+        height: 524px;
+    }
+
+    .product-card {
+        width: 273px;
+        height: 444px;
+    }
+
+    .product-description>.remember-txt {
+        font-size: 0.875rem;
+    }
+
+    .product-description>.bold-txt {
+        font-size: 1.5rem;
+    }
+
+    .product-description>.code-txt {
+        font-size: 1rem;
+        margin: 0 0 10px 0;
+    }
+
+    .product-description>.code-txt>span {
+        font-size: 1rem;
+    }
+
+    .product-datas {
+        gap: 0;
+    }
+
+    .product-data-box-1 {
+        width: 220px;
+        height: 288px;
+        margin-left: 26px;
+    }
+
+    .product-data-box-1:last-child {
+        margin-right: 26px;
+    }
+
+    .product-data-box-1>.avatar-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .product-card>.offer-button-box>button {
+        width: 220px;
+        height: 40px;
+    }
+
+    /* Hamburger */
+    .hamburger {
+        display: block;
+        height: 20px;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu {
+        position: fixed;
+        left: -120%;
+        top: 54px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(34, 32, 32);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
